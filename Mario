@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner val = new Scanner(System.in);
+
+        int num;
+        do {
+            System.out.print("Height: ");
+            num = val.nextInt();
+        }
+        while (num < 1 || num > 8);{
+            for (int x= 0; x<= num; x++){
+                for (int y=1; y<=num-x; y++){
+                    System.out.print(" ");
+                }
+                for (int z=0;z<=x;z++){
+                    System.out.print("#");
+                }
+                System.out.println(" ");
+            }
+        }
+    }
+    }
